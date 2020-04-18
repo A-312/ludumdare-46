@@ -1,0 +1,133 @@
+@import "import/lang.less";
+@import "import/reset.less";
+
+@toolbarHeight: 35px;
+@footerHeight: 60px;
+
+// color
+@footer_bgcolor: #3f4448;
+@toolbar_bgcolor:#24292e;
+@toolbar_fontcolor:white;
+@toolbar_bordercolor:#EE5533;
+
+#progressbar {
+  background-color:@toolbar_bordercolor;
+  position:fixed;
+  z-index:312;
+  width:100%;
+  height:3px;
+}
+
+#toolbar {
+  height:@toolbarHeight;
+  background-color:@toolbar_bgcolor;
+  color:@toolbar_fontcolor;
+
+  display:flex;
+  justify-content:center;
+  vertical-align:middle;
+  line-height:24px;
+
+  & > * {
+    margin:5px;
+    vertical-align:middle;
+    line-height:24px;
+    height:24;
+    margin-left:0;
+    &::before {
+      content:' — ';
+      padding-right:2px;
+    }
+    &:first-child::before {
+      content:'';
+    }
+
+    p {
+      display:inline-block;
+      margin:0;
+    }
+  }
+}
+
+main #phaser canvas {
+  display:block;
+  margin:auto;
+}
+
+body {
+  min-height:100%; 
+  position:relative;
+}
+
+main {
+  padding-bottom:calc(@footerHeight+@toolbarHeight+10px);
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:@footerHeight;
+}
+
+footer {
+  background-color:@footer_bgcolor;
+  color:white;
+  padding:10px 0 30px 0;
+  text-align:center;
+  max-width:inherit;
+
+  a {
+    color:lightblue;
+    &:hover {
+      color:orange;
+    }
+  }
+  #mainFooter {
+    div#socialnetwork {
+      position:absolute;
+      right:0;
+      bottom:0;
+      a#twittericon {
+        background-image:url(out/twitter_bird_white.svg);
+        background-repeat:no-repeat;
+        background-position:center top;
+        overflow-wrap:normal;
+        background-size:38px;
+        margin:auto;
+        display:block;
+        padding-top:38px;
+        line-height:20px;
+        font-size:20px;
+        height:38px;
+        width:108px;
+
+        &:hover {
+          background-image:url(out/twitter_bird_orange.svg);
+        }
+      }
+    }
+  }
+}
+
+blockquote {
+  margin:0 20px;
+
+  p {
+    border:1px dashed #5f5f5f;
+    padding:5px 20px;
+    display:inline-block;
+    text-align:center;
+    margin:0 auto;
+  }
+
+  span {
+    display:block;
+    &.quote:before, &.quote:after {
+      font-family:sans-serif;
+      font-weight:bold;
+    }
+    &.quote:before { content:"“"; }
+    &.quote:after { content:"”"; }
+  }
+}

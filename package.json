@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build and deploy for phaserjs game to GH-Pages",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch",
+    "localserver": "node localserver.js",
+    "zip": "node ./node_modules/gulp/bin/gulp.js zip",
+    "lint": "node node_modules/eslint/bin/eslint ./www/javascript/ ./game/javascript/"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "A-312",
+  "devDependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "cssnano": "4.1.10",
+    "del": "5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "4.0.2",
+    "gulp-concat": "2.6.1",
+    "gulp-ejs": "^5.1.0",
+    "gulp-header": "^2.0.9",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-jsdoc3": "2.0.0",
+    "gulp-less": "4.0.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-terser-js": "5.1.2",
+    "gulp-zip": "5.0.1",
+    "yaml": "1.8.3"
+  }
+}

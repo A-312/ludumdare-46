@@ -1,0 +1,53 @@
+# Full online base_url where is your game
+base_url: https://a-312.github.io/ludumdare-basecode/
+# Lang for SEO
+lang: en
+
+# Your public pseudo/name
+author: A-312
+
+# Display name
+gamename: GameName
+
+# Ludum Dare Session Number
+ludumdare: 46
+
+# Game version
+version: 0.0.1
+
+# Build hash:
+#  - 'auto': Generate random uuidv4 at each build (recommanded)
+#  - 'cutom': Use custom value
+build_version: auto
+
+# Internationalization support (made alternate meta too in head)
+alternates:
+  en: ./
+  # fr: fr/
+
+# SEO title / description / keywords of the page
+title: Ludumdare game
+description: PhaserJS game for Ludum Dare session
+keywords: ludumdare,phaserjs,game,javascript
+
+# Your twitter account set to `false` or `null` if you doesn't have twitter account
+twitter:
+  account: A312_zds
+
+# Social media card (embed your link :D)
+socialcard:
+  title: Ludumdare game
+  description: PhaserJS game for Ludum Dare session
+  image: design/twittercard/banner_ld46_by_c64gamer.png
+
+footer:
+  # Display custom text (allow html)
+  # text: Something to say
+  links:
+    "Report a bug": https://a-312.github.io/ludumdare-basecode/
+    "My Ludum Dare Profile": https://ldjam.com/users/a-312/
+
+
+
+# Reserved (DON'T EDIT)
+$url: null
