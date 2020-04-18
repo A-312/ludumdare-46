@@ -1,0 +1,2 @@
+#langPicker{text-align:center}#langPicker span{line-height:24px}#langPicker a{background-image:url(icon/lang/en.png);background-repeat:no-repeat;background-size:100%;display:inline-block;overflow:hidden;text-indent:-9999px;height:24px;width:24px;vertical-align:middle}#langPicker .disabled{cursor:not-allowed}#langPicker #lang-fr{background-image:url(icon/lang/fr.png)}#langPicker #lang-uk{background-image:url(icon/lang/en-uk.png)}#langPicker #lang-us{background-image:url(icon/lang/en-us.png)}
+/*# sourceMappingURL=../../../build/design/import/lang.css.map */
