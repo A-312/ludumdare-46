@@ -13,7 +13,7 @@ gamename: Rescue turtles
 ludumdare: 46
 
 # Game version
-version: 0.1.0
+version: 0.1.3
 
 # Build hash:
 #  - 'auto': Generate random uuidv4 at each build (recommanded)
@@ -42,10 +42,10 @@ socialcard:
 
 footer:
   # Display custom text (allow html)
-  text: Have fun ! (Compatible multi-gamepads/joysticks or arrows keys)
+  text: Some turtles born on the beach, save them from gulls ! Have fun ! Arrows or Gamepad (left joystick).
   links:
-    "Report a bug": https://a-312.github.io/ludumdare-46/
-    "My Ludum Dare Profile": https://ldjam.com/users/a-312/
+    "Github Page": https://github.com/A-312/ludumdare-46
+    "Ludum Dare Page": https://ldjam.com/events/ludum-dare/46/rescue-turtles-1
 
 
 
