@@ -91,8 +91,9 @@ function create() {
       go2.anims.play('gull_eating', true)
       go2.flipX = (go1.x > go2.x)
 
-      if (go1.texture.key !== 'turtle_eated')
-      go1.anims.play('turtle[50]_fear', true)
+      if (go1.texture.key !== 'turtle_eated') {
+        go1.anims.play('turtle[50]_fear', true)
+      }
       go1.isAttacked = true
 
       const deltaX = (go2.flipX ? (go1.width / 2 - 4) : -go1.width / 2 - 6)
@@ -113,7 +114,9 @@ function create() {
           ease: 'linear',
           complete: 500,
           onComplete: () => {
-            go1.anims.play('turtle_eated', true)
+            if (go1 && go1.anims) {
+              go1.anims.play('turtle_eated', true)
+            }
             go2.isTweenEnable = false
 
             tweens.stop()
