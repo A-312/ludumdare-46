@@ -73,6 +73,8 @@ Girl.prototype.loop = function() {
             strongMagnitude: 0.4
           })
         } catch (e) {}
+      } else {
+        entities.num_gamepad = 0
       }
 
       const pad = inputGamepad.getPad(entities.num_gamepad)
