@@ -120,7 +120,7 @@ Turtles.prototype.loop = function() {
     entitie.depth = entitie.y + entitie.height / 2 + delta
   })
 
-  if (!entities.zone.body.touching.none && entities.zone.body.wasTouching.none && entities.num_gamepad) {
+  if (!entities.zone.body.touching.none && entities.zone.body.wasTouching.none) {
     try {
       navigator.getGamepads()[entities.num_gamepad].vibrationActuator.playEffect('dual-rumble', {
         startDelay: 0,
