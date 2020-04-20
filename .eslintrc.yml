@@ -20,3 +20,12 @@ env:
   commonjs: true
 globals:
   Phaser: true
+  entities: true
+  scene: true
+  groundRectangle: true
+  WIDTH: true
+  HEIGHT: true
+  Girl: true
+  Gulls: true
+  Turtles: true
+  rand: true

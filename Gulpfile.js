@@ -44,7 +44,7 @@ const mapsFolder = buildFolder // private -> path.resolve(__dirname, 'maps')
 const outputBuildFolder = buildFolder
 
 const sourceMapOpt = {
-  // sourceMappingURL: (file) => '../' + file.relative.replace(/\\/g, '/') + '.map'
+  sourceMappingURL: (file) => '../' + file.relative.replace(/\\/g, '/') + '.map'
   // sourceMappingURL: (file) => $url.parse($url.resolve(getApp().base_url, file.relative + '.map')).pathname
 }
 
